@@ -6,6 +6,7 @@ host=`./gcc/config.guess`
 # This long list of targets has been taken from contrib/config-list.mk.
 for short_target in \
   aarch64-elf \
+  aarch64-fuchsia \
   aarch64-linux-gnu \
   aarch64-rtems \
   alpha64-dec-vms \
@@ -13,6 +14,7 @@ for short_target in \
   alpha-linux-gnu \
   alpha-netbsd \
   alpha-openbsd \
+  am33_2.0-linux-gnu \
   amdgcn-amdhsa \
   arceb-linux-uclibcOPT-with-cpu=arc700 \
   arc-elf32OPT-with-cpu=arc600 \
@@ -21,6 +23,7 @@ for short_target in \
   arm-eabi \
   arm-linux-androideabi \
   arm-netbsdelf \
+  arm-phoenix \
   arm-rtems \
   arm-symbianelf \
   arm-uclinux_eabi\
@@ -49,11 +52,13 @@ for short_target in \
   hppa64-linux-gnu \
   hppa-linux-gnu \
   hppa-linux-gnuOPT-enable-sjlj-exceptions=yes \
+  i386-rdos \
   i486-freebsd4 \
   i686-apple-darwin \
   i686-apple-darwin10 \
   i686-apple-darwin9 \
   i686-cygwinOPT-enable-threads=yes \
+  i686-dragonflybsd \
   i686-elf \
   i686-freebsd6 \
   i686-kfreebsd-gnu \
@@ -93,11 +98,14 @@ for short_target in \
   mcore-elf \
   microblaze-elf \
   microblaze-linux \
+  microblaze-rtems \
   mips64-elf \
   mips64el-st-linux-gnu \
   mips64octeon-linux \
   mips64orion-elf \
   mips64vr-elf \
+  mips-img-elf \
+  mips-img-linux \
   mipsel-elf \
   mipsisa32-elfoabi \
   mipsisa32r2-linux-gnu \
@@ -107,6 +115,8 @@ for short_target in \
   mipsisa64r2-sde-elf \
   mipsisa64sb1-elf \
   mipsisa64sr71k-elf \
+  mips-mti-elf \
+  mips-mti-linux \
   mips-netbsd \
   mips-rtems \
   mipstx39-elf \
@@ -153,6 +163,9 @@ for short_target in \
   ppc-elf \
   pru-elf \
   riscv32-unknown-linux-gnu \
+  riscv64be-elf \
+  riscv64-freebsd12 \
+  riscv64-rtems \
   riscv64-unknown-linux-gnu \
   rl78-elf \
   rx-elf \
@@ -187,11 +200,15 @@ for short_target in \
   vax-netbsdelf \
   visium-elf \
   x86_64-apple-darwin \
+  x86_64-dragonflybsd \
   x86_64-elfOPT-with-fpmath=sse \
   x86_64-freebsd6 \
+  x86_64-fuchsia \
   x86_64-mingw32OPT-enable-sjlj-exceptions=yes \
   x86_64-netbsd \
+  x86_64-openbsd \
   x86_64-pc-linux-gnuOPT-with-fpmath=avx \
+  x86_64-rdos \
   x86_64-rtems \
   x86_64-w64-mingw32 \
   xstormy16-elf \
