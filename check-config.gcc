@@ -8,28 +8,28 @@ for short_target in \
   aarch64-elf \
   aarch64-linux-gnu \
   aarch64-rtems \
+  alpha64-dec-vms \
+  alpha-dec-vms \
   alpha-linux-gnu \
   alpha-netbsd \
   alpha-openbsd \
-  alpha64-dec-vms \
-  alpha-dec-vms \
   amdgcn-amdhsa \
+  arceb-linux-uclibcOPT-with-cpu=arc700 \
   arc-elf32OPT-with-cpu=arc600 \
   arc-elf32OPT-with-cpu=arc700 \
   arc-linux-uclibcOPT-with-cpu=arc700 \
-  arceb-linux-uclibcOPT-with-cpu=arc700 \
-  arm-netbsdelf \
-  arm-linux-androideabi \
-  arm-uclinux_eabi\
   arm-eabi \
+  arm-linux-androideabi \
+  arm-netbsdelf \
   arm-rtems \
   arm-symbianelf \
+  arm-uclinux_eabi\
   avr-elf \
   bfin-elf \
-  bfin-uclinux \
   bfin-linux-uclibc \
-  bfin-rtems \
   bfin-openbsd \
+  bfin-rtems \
+  bfin-uclinux \
   bpf-unknown-none \
   c6x-elf \
   c6x-uclinux \
@@ -44,141 +44,141 @@ for short_target in \
   frv-linux \
   ft32-elf \
   h8300-elf \
+  hppa64-hpux11.0OPT-enable-sjlj-exceptions=yes \
+  hppa64-hpux11.3 \
+  hppa64-linux-gnu \
   hppa-linux-gnu \
   hppa-linux-gnuOPT-enable-sjlj-exceptions=yes \
-  hppa64-linux-gnu \
-  hppa64-hpux11.3 \
-  hppa64-hpux11.0OPT-enable-sjlj-exceptions=yes \
-  i686-pc-linux-gnu \
-  i686-apple-darwin \
-  i686-apple-darwin9 \
-  i686-apple-darwin10 \
   i486-freebsd4 \
+  i686-apple-darwin \
+  i686-apple-darwin10 \
+  i686-apple-darwin9 \
+  i686-cygwinOPT-enable-threads=yes \
+  i686-elf \
   i686-freebsd6 \
   i686-kfreebsd-gnu \
-  i686-netbsdelf9 \
-  i686-openbsd \
-  i686-elf \
   i686-kopensolaris-gnu \
-  i686-symbolics-gnu \
-  i686-pc-msdosdjgpp \
   i686-lynxos \
+  i686-mingw32crt \
+  i686-netbsdelf9 \
   i686-nto-qnx \
+  i686-openbsd \
+  i686-pc-linux-gnu \
+  i686-pc-msdosdjgpp \
   i686-rtems \
   i686-solaris2.11 \
+  i686-symbolics-gnu \
   i686-wrs-vxworks \
   i686-wrs-vxworksae \
-  i686-cygwinOPT-enable-threads=yes \
-  i686-mingw32crt \
   ia64-elf \
   ia64-freebsd6 \
-  ia64-linux \
   ia64-hpux \
   ia64-hp-vms \
+  ia64-linux \
   iq2000-elf \
   lm32-elf \
   lm32-rtems \
   lm32-uclinux \
-  loongarch64-linux-gnuf64 \
   loongarch64-linux-gnuf32 \
+  loongarch64-linux-gnuf64 \
   loongarch64-linux-gnusf \
   m32c-elf \
   m32r-elf \
   m32rle-elf \
   m68k-elf \
-  m68k-netbsdelf \
-  m68k-uclinux \
   m68k-linux \
+  m68k-netbsdelf \
   m68k-rtems \
+  m68k-uclinux \
   mcore-elf \
-  microblaze-linux \
   microblaze-elf \
-  mips-netbsd \
+  microblaze-linux \
+  mips64-elf \
   mips64el-st-linux-gnu \
   mips64octeon-linux \
-  mipsisa64r2-linux \
-  mipsisa32r2-linux-gnu \
-  mipsisa64r2-sde-elf \
+  mips64orion-elf \
+  mips64vr-elf \
+  mipsel-elf \
   mipsisa32-elfoabi \
+  mipsisa32r2-linux-gnu \
   mipsisa64-elfoabi \
   mipsisa64r2el-elf \
-  mipsisa64sr71k-elf \
+  mipsisa64r2-linux \
+  mipsisa64r2-sde-elf \
   mipsisa64sb1-elf \
-  mipsel-elf \
-  mips64-elf \
-  mips64vr-elf \
-  mips64orion-elf \
+  mipsisa64sr71k-elf \
+  mips-netbsd \
   mips-rtems \
-  mips-wrs-vxworks \
   mipstx39-elf \
+  mips-wrs-vxworks \
   mmix-knuth-mmixware \
   mn10300-elf \
   moxie-elf \
-  moxie-uclinux \
   moxie-rtems \
+  moxie-uclinux \
   msp430-elf \
   msp430-elfbare \
-  nds32le-elf \
   nds32be-elf \
+  nds32le-elf \
   nios2-elf \
   nios2-linux-gnu \
   nios2-rtems \
   nvptx-none \
   or1k-elf \
-  or1k-linux-uclibc \
   or1k-linux-musl \
+  or1k-linux-uclibc \
   or1k-rtems \
   pdp11-aout \
-  powerpc-darwin8 \
-  powerpc-darwin7 \
   powerpc64-darwin \
-  powerpc-freebsd6 \
-  powerpc-netbsd \
-  powerpc-eabisimaltivec \
-  powerpc-eabisim \
-  ppc-elf \
-  powerpc-eabialtivec \
-  powerpc-xilinx-eabi \
-  powerpc-eabi \
-  powerpc-rtems \
   powerpc64-linux_altivec \
+  powerpc-darwin7 \
+  powerpc-darwin8 \
+  powerpc-eabi \
+  powerpc-eabialtivec \
+  powerpc-eabisim \
+  powerpc-eabisimaltivec \
+  powerpc-freebsd6 \
+  powerpc-ibm-aix7.1 \
+  powerpc-ibm-aix7.2 \
+  powerpcle-eabi \
+  powerpcle-eabisim \
+  powerpcle-elf \
+  powerpc-lynxos \
+  powerpc-netbsd \
+  powerpc-rtems \
   powerpc-wrs-vxworks \
   powerpc-wrs-vxworksae \
   powerpc-wrs-vxworksmils \
-  powerpc-lynxos \
-  powerpcle-elf \
-  powerpcle-eabisim \
-  powerpcle-eabi \
+  powerpc-xilinx-eabi \
+  ppc-elf \
   pru-elf \
   riscv32-unknown-linux-gnu \
   riscv64-unknown-linux-gnu \
-  powerpc-ibm-aix7.1 \
-  powerpc-ibm-aix7.2 \
   rl78-elf \
   rx-elf \
   s390-linux-gnu \
-  s390x-linux-gnu \
   s390x-ibm-tpf \
+  s390x-linux-gnu \
   sh-elf \
   shle-linux \
   sh-netbsdelf \
-  sh-superh-elf \
   sh-rtems \
+  sh-superh-elf \
   sh-wrs-vxworks \
-  sparc-elf \
-  sparc-leon-elf \
-  sparc-rtems \
-  sparc-linux-gnu \
-  sparc-leon3-linux-gnuOPT-enable-target=all \
-  sparc-netbsdelf \
-  sparc64-sun-solaris2.11OPT-with-gnu-ldOPT-with-gnu-asOPT-enable-threads=posix \
-  sparc-wrs-vxworks \
   sparc64-elf \
-  sparc64-rtems \
-  sparc64-linux \
   sparc64-freebsd6 \
+  sparc64-linux \
   sparc64-netbsd \
   sparc64-openbsd \
+  sparc64-rtems \
+  sparc64-sun-solaris2.11OPT-with-gnu-ldOPT-with-gnu-asOPT-enable-threads=posix \
+  sparc-elf \
+  sparc-leon3-linux-gnuOPT-enable-target=all \
+  sparc-leon-elf \
+  sparc-linux-gnu \
+  sparc-netbsdelf \
+  sparc-rtems \
+  sparc-wrs-vxworks \
   v850e1-elf \
   v850e-elf \
   v850-elf \
@@ -187,13 +187,13 @@ for short_target in \
   vax-netbsdelf \
   visium-elf \
   x86_64-apple-darwin \
-  x86_64-pc-linux-gnuOPT-with-fpmath=avx \
   x86_64-elfOPT-with-fpmath=sse \
   x86_64-freebsd6 \
-  x86_64-netbsd \
-  x86_64-w64-mingw32 \
   x86_64-mingw32OPT-enable-sjlj-exceptions=yes \
+  x86_64-netbsd \
+  x86_64-pc-linux-gnuOPT-with-fpmath=avx \
   x86_64-rtems \
+  x86_64-w64-mingw32 \
   xstormy16-elf \
   xtensa-elf \
   xtensa-linux
