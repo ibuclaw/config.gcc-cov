@@ -251,6 +251,7 @@ do
     gnu_ld_flag=no
     enable_obsolete=no
     enable_multilib=no
+    with_endian=
     with_multilib_generator=default
     with_multilib_list=default
 
