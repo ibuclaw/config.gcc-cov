@@ -21,20 +21,20 @@
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">70.81%</span></span>
+    (<span class="covered_percent"><span class="red">71.01%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         54.45
+         54.51
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>2</b> files in total.
-    <b>3169</b> relevant lines. 
-    <span class="green"><b>2244</b> lines covered</span> and
-    <span class="red"><b>925</b> lines missed </span>
+    <b>3170</b> relevant lines. 
+    <span class="green"><b>2251</b> lines covered</span> and
+    <span class="red"><b>919</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -53,20 +53,20 @@
       <tr>
         <td class="strong"><a href="#bc584b6df9a889670a22254c349fde12cc2fdba3" class="src_link" title="check-config.gcc">check-config.gcc</a></td>
         <td class="green strong">99.63 %</td>
-        <td>289</td>
+        <td>290</td>
+        <td>268</td>
         <td>267</td>
-        <td>266</td>
         <td>1</td>
-        <td>352.8</td>
+        <td>352.4</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#306a1cd461fabdaac79950bb5334d58f2a98d029" class="src_link" title="gcc/gcc/config.gcc">gcc/gcc/config.gcc</a></td>
-        <td class="red strong">68.16 %</td>
+        <td class="red strong">68.37 %</td>
         <td>5803</td>
         <td>2902</td>
-        <td>1978</td>
-        <td>924</td>
+        <td>1984</td>
+        <td>918</td>
         <td>27.0</td>
       </tr>
       
@@ -91,8 +91,8 @@
     <h3>check-config.gcc</h3>
     <h4><span class="green">99.63 %</span> covered</h4>
     <div>
-      <b>267</b> relevant lines. 
-      <span class="green"><b>266</b> lines covered</span> and
+      <b>268</b> relevant lines. 
+      <span class="green"><b>267</b> lines covered</span> and
       <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
@@ -1621,214 +1621,220 @@
         <li class="covered" data-hits="239" data-linenumber="254">
           <span class="hits">239</span>
           
-          <code class="ruby">    with_multilib_generator=default</code>
+          <code class="ruby">    with_endian=</code>
         </li>
       
         <li class="covered" data-hits="239" data-linenumber="255">
           <span class="hits">239</span>
           
-          <code class="ruby">    with_multilib_list=default</code>
+          <code class="ruby">    with_multilib_generator=default</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="256">
+        <li class="covered" data-hits="239" data-linenumber="256">
+          <span class="hits">239</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    with_multilib_list=default</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="257">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="258">
+          
+          
           <code class="ruby">    # Get our canonicalized target.</code>
         </li>
       
-        <li class="covered" data-hits="717" data-linenumber="258">
+        <li class="covered" data-hits="717" data-linenumber="259">
           <span class="hits">717</span>
           
           <code class="ruby">    target=`echo ${short_target} | awk &#39;BEGIN { FS = &quot;OPT&quot; }; { print $1 }&#39;`</code>
         </li>
       
-        <li class="covered" data-hits="478" data-linenumber="259">
+        <li class="covered" data-hits="478" data-linenumber="260">
           <span class="hits">478</span>
           
           <code class="ruby">    target=`./gcc/config.sub ${target}`</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="260">
+        <li class="never" data-hits="" data-linenumber="261">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="261">
+        <li class="never" data-hits="" data-linenumber="262">
           
           
           <code class="ruby">    # Parse any extra configure OPTs in the target string.</code>
         </li>
       
-        <li class="covered" data-hits="717" data-linenumber="262">
+        <li class="covered" data-hits="717" data-linenumber="263">
           <span class="hits">717</span>
           
           <code class="ruby">    target_with_configure_opts=(`echo ${short_target} | sed &#39;s/OPT-/ /g&#39;`)</code>
         </li>
       
-        <li class="covered" data-hits="478" data-linenumber="263">
+        <li class="covered" data-hits="478" data-linenumber="264">
           <span class="hits">478</span>
           
           <code class="ruby">    if `echo ${target_with_configure_opts[@]} | grep -q &quot;with-gnu-as&quot;`; then</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="264">
+        <li class="covered" data-hits="1" data-linenumber="265">
           <span class="hits">1</span>
           
           <code class="ruby">	gas_flag=yes</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="265">
+        <li class="covered" data-hits="3" data-linenumber="266">
           <span class="hits">3</span>
           
           <code class="ruby">	target_with_configure_opts=(`printf &#39;%s\n&#39; ${target_with_configure_opts[@]} | grep -v &quot;with-gnu-as&quot;`)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="266">
+        <li class="never" data-hits="" data-linenumber="267">
           
           
           <code class="ruby">    fi</code>
         </li>
       
-        <li class="covered" data-hits="478" data-linenumber="267">
+        <li class="covered" data-hits="478" data-linenumber="268">
           <span class="hits">478</span>
           
           <code class="ruby">    if `echo ${target_with_configure_opts[@]} | grep -q &quot;with-gnu-ld&quot;`; then</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="268">
+        <li class="covered" data-hits="1" data-linenumber="269">
           <span class="hits">1</span>
           
           <code class="ruby">	gnu_ld_flag=yes</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="269">
+        <li class="covered" data-hits="3" data-linenumber="270">
           <span class="hits">3</span>
           
           <code class="ruby">	target_with_configure_opts=(`printf &#39;%s\n&#39; ${target_with_configure_opts[@]} | grep -v &quot;with-gnu-ld&quot;`)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="270">
+        <li class="never" data-hits="" data-linenumber="271">
           
           
           <code class="ruby">    fi</code>
         </li>
       
-        <li class="covered" data-hits="478" data-linenumber="271">
+        <li class="covered" data-hits="478" data-linenumber="272">
           <span class="hits">478</span>
           
           <code class="ruby">    if `echo ${target_with_configure_opts[@]} | grep -q &quot;enable-obsolete&quot;`; then</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="272">
+        <li class="missed" data-hits="0" data-linenumber="273">
           
           
           <code class="ruby">	enable_obsolete=yes</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="273">
+        <li class="never" data-hits="" data-linenumber="274">
           
           
           <code class="ruby">	target_with_configure_opts=(`printf &#39;%s\n&#39; ${target_with_configure_opts[@]} | grep -v &quot;enable-obsolete&quot;`)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="274">
+        <li class="never" data-hits="" data-linenumber="275">
           
           
           <code class="ruby">    fi</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="275">
+        <li class="never" data-hits="" data-linenumber="276">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="276">
+        <li class="never" data-hits="" data-linenumber="277">
           
           
           <code class="ruby">    # All other configure options that don&#39;t require any special handling.</code>
         </li>
       
-        <li class="covered" data-hits="717" data-linenumber="277">
+        <li class="covered" data-hits="717" data-linenumber="278">
           <span class="hits">717</span>
           
           <code class="ruby">    enable_configure_opts=(`echo ${target_with_configure_opts[@]:1} | sed &#39;s/-/_/g&#39;`)</code>
         </li>
       
-        <li class="covered" data-hits="253" data-linenumber="278">
+        <li class="covered" data-hits="253" data-linenumber="279">
           <span class="hits">253</span>
           
           <code class="ruby">    eval ${enable_configure_opts[@]}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="279">
+        <li class="never" data-hits="" data-linenumber="280">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="280">
+        <li class="never" data-hits="" data-linenumber="281">
           
           
           <code class="ruby">    #echo &quot;${short_target} - ${target}&quot;</code>
         </li>
       
-        <li class="covered" data-hits="239" data-linenumber="281">
+        <li class="covered" data-hits="239" data-linenumber="282">
           <span class="hits">239</span>
           
           <code class="ruby">    . gcc/gcc/config.gcc</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="282">
+        <li class="never" data-hits="" data-linenumber="283">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="283">
+        <li class="never" data-hits="" data-linenumber="284">
           
           
           <code class="ruby">    # Clean-up</code>
         </li>
       
-        <li class="covered" data-hits="717" data-linenumber="284">
+        <li class="covered" data-hits="717" data-linenumber="285">
           <span class="hits">717</span>
           
           <code class="ruby">    disable_configure_opts=(`echo ${enable_configure_opts[@]} | sed &#39;s/=[^ ]*/=/g&#39;`)</code>
         </li>
       
-        <li class="covered" data-hits="253" data-linenumber="285">
+        <li class="covered" data-hits="253" data-linenumber="286">
           <span class="hits">253</span>
           
           <code class="ruby">    eval ${disable_configure_opts[@]}</code>
         </li>
       
-        <li class="covered" data-hits="5975" data-linenumber="286">
+        <li class="covered" data-hits="5975" data-linenumber="287">
           <span class="hits">5975</span>
           
           <code class="ruby">    for option in $all_defaults; do</code>
         </li>
       
-        <li class="covered" data-hits="23900" data-linenumber="287">
+        <li class="covered" data-hits="23900" data-linenumber="288">
           <span class="hits">23900</span>
           
           <code class="ruby">	eval &quot;with_&quot;`echo $option | sed s/-/_/g`&quot;=&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="288">
+        <li class="never" data-hits="" data-linenumber="289">
           
           
           <code class="ruby">    done</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="289">
+        <li class="never" data-hits="" data-linenumber="290">
           
           
           <code class="ruby">done</code>
@@ -1842,11 +1848,11 @@
         <div class="source_table" id="306a1cd461fabdaac79950bb5334d58f2a98d029">
   <div class="header">
     <h3>gcc/gcc/config.gcc</h3>
-    <h4><span class="red">68.16 %</span> covered</h4>
+    <h4><span class="red">68.37 %</span> covered</h4>
     <div>
       <b>2902</b> relevant lines. 
-      <span class="green"><b>1978</b> lines covered</span> and
-      <span class="red"><b>924</b> lines missed.</span>
+      <span class="green"><b>1984</b> lines covered</span> and
+      <span class="red"><b>918</b> lines missed.</span>
     </div>
   </div>
   
@@ -9059,8 +9065,8 @@
           <code class="ruby">	if test x${with_endian} = x; then</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="1202">
-          
+        <li class="covered" data-hits="2" data-linenumber="1202">
+          <span class="hits">2</span>
           
           <code class="ruby">		case ${target} in</code>
         </li>
@@ -9071,8 +9077,8 @@
           <code class="ruby">		arc*be-*-* | arc*eb-*-*)	with_endian=big ;;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="1204">
-          
+        <li class="covered" data-hits="2" data-linenumber="1204">
+          <span class="hits">2</span>
           
           <code class="ruby">		*)				with_endian=little ;;</code>
         </li>
@@ -9119,8 +9125,8 @@
           <code class="ruby">	case ${with_endian} in</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="1212">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="1212">
+          
           
           <code class="ruby">	big*)	tm_file=&quot;arc/big.h ${tm_file}&quot;</code>
         </li>
@@ -9185,8 +9191,8 @@
           <code class="ruby">	if test x${with_endian} = x; then</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="1223">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="1223">
+          <span class="hits">2</span>
           
           <code class="ruby">		case ${target} in</code>
         </li>
@@ -9197,8 +9203,8 @@
           <code class="ruby">		arc*be-*-* | arc*eb-*-*)	with_endian=big ;;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="1225">
-          
+        <li class="covered" data-hits="1" data-linenumber="1225">
+          <span class="hits">1</span>
           
           <code class="ruby">		*)				with_endian=little ;;</code>
         </li>
@@ -9245,8 +9251,8 @@
           <code class="ruby">	case ${with_endian} in</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="1233">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="1233">
+          <span class="hits">1</span>
           
           <code class="ruby">	big*)	tm_file=&quot;arc/big.h ${tm_file}&quot;</code>
         </li>
@@ -11267,8 +11273,8 @@
           <code class="ruby">	if test x${with_endian} != x; then</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="1570">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="1570">
+          
           
           <code class="ruby">	    case ${with_endian} in</code>
         </li>
@@ -20651,8 +20657,8 @@
           <code class="ruby">	if test x${with_endian} = x; then</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="3134">
-          
+        <li class="covered" data-hits="4" data-linenumber="3134">
+          <span class="hits">4</span>
           
           <code class="ruby">		case ${target} in</code>
         </li>
@@ -20681,8 +20687,8 @@
           <code class="ruby">		shl* | sh*-*-linux* | \</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="3139">
-          
+        <li class="covered" data-hits="2" data-linenumber="3139">
+          <span class="hits">2</span>
           
           <code class="ruby">		  sh-superh-elf)		   with_endian=little,big ;;</code>
         </li>
@@ -20693,8 +20699,8 @@
           <code class="ruby">		sh[1234]*-*-*)			   with_endian=big ;;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="3141">
-          
+        <li class="covered" data-hits="2" data-linenumber="3141">
+          <span class="hits">2</span>
           
           <code class="ruby">		*)				   with_endian=big,little ;;</code>
         </li>
@@ -20735,8 +20741,8 @@
           <code class="ruby">	case ${with_endian} in</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="3148">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="3148">
+          
           
           <code class="ruby">	big)		TM_ENDIAN_CONFIG=mb ;;</code>
         </li>
@@ -20747,14 +20753,14 @@
           <code class="ruby">	little)		TM_ENDIAN_CONFIG=ml ;;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="3150">
-          
+        <li class="covered" data-hits="2" data-linenumber="3150">
+          <span class="hits">2</span>
           
           <code class="ruby">	big,little)	TM_ENDIAN_CONFIG=&quot;mb ml&quot; ;;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="3151">
-          
+        <li class="covered" data-hits="2" data-linenumber="3151">
+          <span class="hits">2</span>
           
           <code class="ruby">	little,big)	TM_ENDIAN_CONFIG=&quot;ml mb&quot; ;;</code>
         </li>
@@ -20777,8 +20783,8 @@
           <code class="ruby">	case ${with_endian} in</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="3155">
-          
+        <li class="covered" data-hits="2" data-linenumber="3155">
+          <span class="hits">2</span>
           
           <code class="ruby">	little*)	tm_file=&quot;sh/little.h ${tm_file}&quot; ;;</code>
         </li>
