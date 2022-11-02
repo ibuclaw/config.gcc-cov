@@ -21,15 +21,25 @@ for short_target in \
   alpha-openbsd \
   am33_2.0-linux-gnu \
   amdgcn-amdhsa \
+  arceb-elf32OPT-with-cpu=arc700 \
   arceb-linux-uclibcOPT-with-cpu=arc700 \
   arc-elf32OPT-with-cpu=arc600 \
   arc-elf32OPT-with-cpu=arc700 \
   arc-linux-uclibcOPT-with-cpu=arc700 \
+  armeb-eabi \
+  armeb-freebsd10 \
+  armeb-netbsdelf \
+  armv6-freebsd10 \
+  armv6-netbsdelf \
+  armv7-freebsd10 \
+  armv7-netbsdelf \
   arm-eabi \
+  arm-elf-uclinuxfdpiceabi \
   arm-freebsd12 \
   arm-fuchsia \
   arm-linux-androideabi \
   arm-netbsdelf \
+  arm-netbsdelf-eabihf \
   arm-phoenix \
   arm-rtems \
   arm-symbianelf \
@@ -47,8 +57,10 @@ for short_target in \
   cris-elf \
   csky-elf \
   csky-linux-gnu \
+  csky-linux-uclibc \
   epiphany-elf \
   epiphany-elfOPT-with-stack-offset=16 \
+  epiphany-rtems \
   fido-elf \
   fr30-elf \
   frv-elf \
@@ -57,6 +69,7 @@ for short_target in \
   h8300-elf \
   h8300-linux \
   hppa64-hpux11.0OPT-enable-sjlj-exceptions=yes \
+  hppa64-hpux11.1 \
   hppa64-hpux11.3 \
   hppa64-linux-gnu \
   hppa-linux-gnu \
@@ -81,6 +94,7 @@ for short_target in \
   i686-nto-qnx \
   i686-openbsd \
   i686-pc-linux-gnu \
+  i686-pc-linuxOPT-enable-targets=all \
   i686-pc-msdosdjgpp \
   i686-rtems \
   i686-solaris2.11 \
@@ -90,6 +104,7 @@ for short_target in \
   ia64-elf \
   ia64-freebsd6 \
   ia64-hpux \
+  ia64-hpux11.3 \
   ia64-hp-vms \
   ia64-linux \
   iq2000-elf \
@@ -131,6 +146,7 @@ for short_target in \
   mipsisa64r2-sde-elf \
   mipsisa64sb1-elf \
   mipsisa64sr71k-elf \
+  mips-linuxOPT-enable-targets=all \
   mips-mti-elf \
   mips-mti-linux \
   mips-netbsd \
@@ -172,6 +188,8 @@ for short_target in \
   powerpcle-eabi \
   powerpcle-eabisim \
   powerpcle-elf \
+  powerpcle-linuxOPT-enable-targets=all \
+  powerpc-linuxOPT-enable-targets=all \
   powerpc-lynxos \
   powerpc-netbsd \
   powerpc-rtems \
@@ -195,6 +213,7 @@ for short_target in \
   rx-elf \
   rx-linux \
   s390-linux-gnu \
+  s390-linux-gnuOPT-enable-targets=all \
   s390x-ibm-tpf \
   s390x-linux-gnu \
   sh-elf \
@@ -211,7 +230,7 @@ for short_target in \
   sparc64-rtems \
   sparc64-sun-solaris2.11OPT-with-gnu-ldOPT-with-gnu-asOPT-enable-threads=posix \
   sparc-elf \
-  sparc-leon3-linux-gnuOPT-enable-target=all \
+  sparc-leon3-linux-gnuOPT-enable-targets=all \
   sparc-leon-elf \
   sparc-linux-gnu \
   sparc-netbsdelf \
@@ -239,6 +258,7 @@ for short_target in \
   x86_64-rdos \
   x86_64-rtems \
   x86_64-w64-mingw32 \
+  x86_64-w64-mingw32OPT-enable-targets=all \
   x86_64-wrs-vxworks7 \
   xstormy16-elf \
   xtensa-elf \
