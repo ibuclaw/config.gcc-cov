@@ -6,9 +6,14 @@ host=`./gcc/config.guess`
 # This long list of targets has been taken from contrib/config-list.mk.
 for short_target in \
   aarch64-elf \
+  aarch64-freebsd12 \
   aarch64-fuchsia \
   aarch64-linux-gnu \
+  aarch64-netbsd \
   aarch64-rtems \
+  aarch64-wrs-vxworks \
+  aarch64_be-elf \
+  aarch64_be-linux-gnu \
   alpha64-dec-vms \
   alpha-dec-vms \
   alpha-linux-gnu \
@@ -21,12 +26,15 @@ for short_target in \
   arc-elf32OPT-with-cpu=arc700 \
   arc-linux-uclibcOPT-with-cpu=arc700 \
   arm-eabi \
+  arm-freebsd12 \
+  arm-fuchsia \
   arm-linux-androideabi \
   arm-netbsdelf \
   arm-phoenix \
   arm-rtems \
   arm-symbianelf \
   arm-uclinux_eabi\
+  arm-wrs-vxworks7 \
   avr-elf \
   bfin-elf \
   bfin-linux-uclibc \
@@ -47,11 +55,15 @@ for short_target in \
   frv-linux \
   ft32-elf \
   h8300-elf \
+  h8300-linux \
   hppa64-hpux11.0OPT-enable-sjlj-exceptions=yes \
   hppa64-hpux11.3 \
   hppa64-linux-gnu \
   hppa-linux-gnu \
   hppa-linux-gnuOPT-enable-sjlj-exceptions=yes \
+  hppa-netbsd \
+  hppa-openbsd \
+  i386-elfiamcu \
   i386-rdos \
   i486-freebsd4 \
   i686-apple-darwin \
@@ -99,10 +111,14 @@ for short_target in \
   microblaze-elf \
   microblaze-linux \
   microblaze-rtems \
+  microblazeel-elf \
+  microblazeel-linux \
+  microblazeel-rtems \
   mips64-elf \
   mips64el-st-linux-gnu \
   mips64octeon-linux \
   mips64orion-elf \
+  mips64r5900-elf \
   mips64vr-elf \
   mips-img-elf \
   mips-img-linux \
@@ -124,12 +140,14 @@ for short_target in \
   mmix-knuth-mmixware \
   mn10300-elf \
   moxie-elf \
+  moxie-moxiebox \
   moxie-rtems \
   moxie-uclinux \
   msp430-elf \
   msp430-elfbare \
   nds32be-elf \
   nds32le-elf \
+  nds32le-linux-gnu \
   nios2-elf \
   nios2-linux-gnu \
   nios2-rtems \
@@ -140,6 +158,7 @@ for short_target in \
   or1k-rtems \
   pdp11-aout \
   powerpc64-darwin \
+  powerpc64-freebsd13 \
   powerpc64-linux_altivec \
   powerpc-darwin7 \
   powerpc-darwin8 \
@@ -157,18 +176,24 @@ for short_target in \
   powerpc-netbsd \
   powerpc-rtems \
   powerpc-wrs-vxworks \
+  powerpc-wrs-vxworks7r \
   powerpc-wrs-vxworksae \
   powerpc-wrs-vxworksmils \
   powerpc-xilinx-eabi \
   ppc-elf \
   pru-elf \
+  riscv32be-freebsd12 \
   riscv32-unknown-linux-gnu \
   riscv64be-elf \
   riscv64-freebsd12 \
   riscv64-rtems \
   riscv64-unknown-linux-gnu \
   rl78-elf \
+  rs6000-ibm-aix7.1 \
+  rs6000-ibm-aix7.1.3.0 \
+  rs6000-ibm-aix7.2.0.0 \
   rx-elf \
+  rx-linux \
   s390-linux-gnu \
   s390x-ibm-tpf \
   s390x-linux-gnu \
@@ -200,10 +225,13 @@ for short_target in \
   vax-netbsdelf \
   visium-elf \
   x86_64-apple-darwin \
+  x86_64-apple-darwin20 \
+  x86_64-cygwinOPT-enable-threads=yes \
   x86_64-dragonflybsd \
   x86_64-elfOPT-with-fpmath=sse \
   x86_64-freebsd6 \
   x86_64-fuchsia \
+  x86_64-kfreebsd-gnu \
   x86_64-mingw32OPT-enable-sjlj-exceptions=yes \
   x86_64-netbsd \
   x86_64-openbsd \
@@ -211,9 +239,11 @@ for short_target in \
   x86_64-rdos \
   x86_64-rtems \
   x86_64-w64-mingw32 \
+  x86_64-wrs-vxworks7 \
   xstormy16-elf \
   xtensa-elf \
-  xtensa-linux
+  xtensa-linux \
+  xtensa-uclinux
 do
     # Reset or remove any residue environment settings that the previous
     # config.gcc run might have added.
