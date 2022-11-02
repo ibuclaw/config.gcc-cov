@@ -96,7 +96,7 @@ module Bashcov
     end
 
     def relevant?(line) # rubocop:disable Metrics/CyclomaticComplexity
-      line.sub!(/ #.*\Z/, "") # remove comments
+      line.sub!(/\s#.*\Z/, "") # remove comments
       line.strip!
 
       relevant = true
