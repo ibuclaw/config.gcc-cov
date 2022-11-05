@@ -15,6 +15,11 @@ for short_target in \
   aarch64_be-elf \
   aarch64_be-linux-gnu \
   alpha64-dec-vms \
+  alphaev56-linux-gnu \
+  alphaev67-linux-gnu \
+  alphaev5-linux-gnu \
+  alphaev6-linux-gnu \
+  alphapca56-linux-gnu \
   alpha-dec-vms \
   alpha-linux-gnu \
   alpha-netbsd \
@@ -35,6 +40,7 @@ for short_target in \
   armv7-netbsdelf \
   arm-eabi \
   arm-elf-uclinuxfdpiceabi \
+  arm-elf-uclinuxfdpiceabihf \
   arm-freebsd12 \
   arm-fuchsia \
   arm-linux-androideabi \
@@ -78,7 +84,11 @@ for short_target in \
   hppa-openbsd \
   i386-elfiamcu \
   i386-rdos \
+  i386-freebsd5 \
+  i386-freebsd6 \
+  i386-netbsdelf \
   i486-freebsd4 \
+  i586-pc-linux-gnu \
   i686-apple-darwin \
   i686-apple-darwin10 \
   i686-apple-darwin9 \
@@ -90,6 +100,7 @@ for short_target in \
   i686-kopensolaris-gnu \
   i686-lynxos \
   i686-mingw32crt \
+  i686-w64-mingw32 \
   i686-netbsdelf9 \
   i686-nto-qnx \
   i686-openbsd \
@@ -130,6 +141,7 @@ for short_target in \
   microblazeel-linux \
   microblazeel-rtems \
   mips64-elf \
+  mips64-linux-gnuabi64 \
   mips64el-st-linux-gnu \
   mips64octeon-linux \
   mips64orion-elf \
@@ -139,11 +151,25 @@ for short_target in \
   mips-img-linux \
   mipsel-elf \
   mipsisa32-elfoabi \
+  mipsisa32-linux-gnu \
   mipsisa32r2-linux-gnu \
+  mipsisa32r6-linux-gnu \
   mipsisa64-elfoabi \
+  mipsisa64-linux-gnu \
+  mipsisa32r2el-elf \
+  mipsisa32r6el-elf \
   mipsisa64r2el-elf \
+  mipsisa64r6el-elf \
   mipsisa64r2-linux \
+  mipsisa64r2-linux-gnuabi64 \
+  mipsisa32r2-sde-elf \
+  mipsisa32r6-sde-elf \
+  mipsisa32-sde-elf \
   mipsisa64r2-sde-elf \
+  mipsisa64r6-sde-elf \
+  mipsisa64-sde-elf \
+  mipsisa64r6-linux \
+  mipsisa64r6-linux-gnuabi64 \
   mipsisa64sb1-elf \
   mipsisa64sr71k-elf \
   mips-linuxOPT-enable-targets=all \
@@ -176,13 +202,17 @@ for short_target in \
   powerpc64-darwin \
   powerpc64-freebsd13 \
   powerpc64-linux_altivec \
+  powerpc64-linux-musl \
+  powerpc-darwin4 \
   powerpc-darwin7 \
   powerpc-darwin8 \
+  powerpc-darwin9 \
   powerpc-eabi \
   powerpc-eabialtivec \
   powerpc-eabisim \
   powerpc-eabisimaltivec \
   powerpc-freebsd6 \
+  powerpcle-freebsd13 \
   powerpc-ibm-aix7.1 \
   powerpc-ibm-aix7.2 \
   powerpcle-eabi \
@@ -202,6 +232,7 @@ for short_target in \
   pru-elf \
   riscv32be-freebsd12 \
   riscv32-unknown-linux-gnu \
+  riscv64be-unknown-linux-gnu \
   riscv64be-elf \
   riscv64-freebsd12 \
   riscv64-rtems \
@@ -217,6 +248,15 @@ for short_target in \
   s390x-ibm-tpf \
   s390x-linux-gnu \
   sh-elf \
+  sh2a-elf \
+  sh2e-elf \
+  sh3e-elf \
+  sh4a-elf \
+  sh4ael-elf \
+  sh2-linux \
+  sh4-linux \
+  sh4be-linux \
+  shbe-linux \
   shle-linux \
   sh-netbsdelf \
   sh-rtems \
@@ -230,13 +270,19 @@ for short_target in \
   sparc64-rtems \
   sparc64-sun-solaris2.11OPT-with-gnu-ldOPT-with-gnu-asOPT-enable-threads=posix \
   sparc-elf \
+  sparc-leon-linux-gnu \
   sparc-leon3-linux-gnuOPT-enable-targets=all \
   sparc-leon-elf \
+  sparc-leon3v7-elf \
   sparc-linux-gnu \
   sparc-netbsdelf \
   sparc-rtems \
+  sparc-sun-solaris2.11 \
+  sparc-elf \
   sparc-wrs-vxworks \
   v850e1-elf \
+  v850e2-elf \
+  v850e2v3-elf \
   v850e-elf \
   v850-elf \
   v850-rtems \
@@ -278,7 +324,7 @@ do
     # Get our canonicalized target.
     target=`echo ${short_target} | awk 'BEGIN { FS = "OPT" }; { print $1 }'`
     target=`./gcc/config.sub ${target}`
-
+    
     # Parse any extra configure OPTs in the target string.
     target_with_configure_opts=(`echo ${short_target} | sed 's/OPT-/ /g'`)
     if `echo ${target_with_configure_opts[@]} | grep -q "with-gnu-as"`; then
