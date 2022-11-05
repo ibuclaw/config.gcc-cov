@@ -51,6 +51,7 @@ for short_target in \
   arm-symbianelf \
   arm-uclinux_eabi\
   arm-wrs-vxworks7 \
+  athlon-pc-linux-gnu \
   avr-elf \
   bfin-elf \
   bfin-linux-uclibc \
@@ -82,6 +83,7 @@ for short_target in \
   hppa-linux-gnuOPT-enable-sjlj-exceptions=yes \
   hppa-netbsd \
   hppa-openbsd \
+  k6-pc-linux-gnu \
   i386-elfiamcu \
   i386-rdos \
   i386-freebsd5 \
@@ -199,6 +201,11 @@ for short_target in \
   or1k-linux-uclibc \
   or1k-rtems \
   pdp11-aout \
+  pentium2-pc-linux-gnu \
+  pentium3-pc-linux-gnu \
+  pentium4-pc-linux-gnu \
+  pentium4-pc-linux-gnu \
+  pentiumpro-pc-linux-gnu \
   powerpc64-darwin \
   powerpc64-freebsd13 \
   powerpc64-linux_altivec \
@@ -322,8 +329,8 @@ do
     with_multilib_list=default
 
     # Get our canonicalized target.
-    target=`echo ${short_target} | awk 'BEGIN { FS = "OPT" }; { print $1 }'`
-    target=`./gcc/config.sub ${target}`
+    target_noncanonical=`echo ${short_target} | awk 'BEGIN { FS = "OPT" }; { print $1 }'`
+    target=`./gcc/config.sub ${target_noncanonical}`
     
     # Parse any extra configure OPTs in the target string.
     target_with_configure_opts=(`echo ${short_target} | sed 's/OPT-/ /g'`)
