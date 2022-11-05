@@ -113,7 +113,7 @@ module Bashcov
                            line.end_with?(*IGNORE_END_WITH)
 
       relevant &= false if line =~ /\A\w+\(\)/ # function declared without the `function` keyword
-      relevant &= false if line =~ /\A[^\)]+\)\Z/ # case statement selector, e.g. `--help)`
+      relevant &= false if line =~ /\A[^\)]*\)\Z/ # case statement selector, e.g. `--help)`
 
       relevant
     end
