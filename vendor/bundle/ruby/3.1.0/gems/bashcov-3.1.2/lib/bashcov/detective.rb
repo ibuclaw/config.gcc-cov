@@ -34,8 +34,7 @@ module Bashcov
       return false unless File.exist?(filename) && File.readable?(filename) \
         && File.file?(File.realpath(filename))
 
-      shellscript_shebang?(filename) ||
-        (shellscript_extension?(filename) && shellscript_syntax?(filename))
+      shellscript_shebang?(filename) || shellscript_syntax?(filename)
     end
 
     # @param [String,Pathname] filename the name of the file to be checked
