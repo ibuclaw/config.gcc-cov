@@ -6,7 +6,7 @@ host=`./gcc/config.guess`
 # This long list of targets has been taken from contrib/config-list.mk.
 for short_target in \
   aarch64-elf \
-  aarch64-freebsd12 \
+  aarch64-freebsd13 \
   aarch64-fuchsia \
   aarch64-linux-gnu \
   aarch64-netbsd \
@@ -87,17 +87,16 @@ for short_target in \
   i386-elfiamcu \
   i386-rdos \
   i386-freebsd5 \
-  i386-freebsd6 \
+  i386-freebsd13 \
   i386-netbsdelf \
-  i486-freebsd4 \
   i586-pc-linux-gnu \
-  i686-apple-darwin \
-  i686-apple-darwin10 \
+  i686-apple-darwin13 \
+  i686-apple-darwin17 \
   i686-apple-darwin9 \
   i686-cygwinOPT-enable-threads=yes \
   i686-dragonflybsd \
   i686-elf \
-  i686-freebsd6 \
+  i686-freebsd13 \
   i686-kfreebsd-gnu \
   i686-kopensolaris-gnu \
   i686-lynxos \
@@ -111,15 +110,14 @@ for short_target in \
   i686-pc-msdosdjgpp \
   i686-rtems \
   i686-solaris2.11 \
-  i686-symbolics-gnu \
+  i686-gnu \
   i686-wrs-vxworks \
   i686-wrs-vxworksae \
-  ia64-elf \
-  ia64-freebsd6 \
-  ia64-hpux \
-  ia64-hpux11.3 \
-  ia64-hp-vms \
-  ia64-linux \
+  ia64-elfOPT-enable-obsolete \
+  ia64-hpuxOPT-enable-obsolete \
+  ia64-hpux11.3OPT-enable-obsolete \
+  ia64-hp-vmsOPT-enable-obsolete \
+  ia64-linuxOPT-enable-obsolete \
   iq2000-elf \
   lm32-elf \
   lm32-rtems \
@@ -206,19 +204,19 @@ for short_target in \
   pentium4-pc-linux-gnu \
   pentium4-pc-linux-gnu \
   pentiumpro-pc-linux-gnu \
-  powerpc64-darwin \
+  powerpc64-apple-darwin9 \
   powerpc64-freebsd13 \
   powerpc64-linux_altivec \
   powerpc64-linux-musl \
+  powerpc-apple-darwin8 \
+  powerpc-apple-darwin9 \
   powerpc-darwin4 \
   powerpc-darwin7 \
-  powerpc-darwin8 \
-  powerpc-darwin9 \
   powerpc-eabi \
   powerpc-eabialtivec \
   powerpc-eabisim \
   powerpc-eabisimaltivec \
-  powerpc-freebsd6 \
+  powerpc-freebsd13 \
   powerpcle-freebsd13 \
   powerpc-ibm-aix7.1 \
   powerpc-ibm-aix7.2 \
@@ -270,7 +268,6 @@ for short_target in \
   sh-superh-elf \
   sh-wrs-vxworks \
   sparc64-elf \
-  sparc64-freebsd6 \
   sparc64-linux \
   sparc64-netbsd \
   sparc64-openbsd \
@@ -296,13 +293,15 @@ for short_target in \
   vax-linux-gnu \
   vax-netbsdelf \
   visium-elf \
-  x86_64-apple-darwin \
-  x86_64-apple-darwin20 \
+  x86_64-apple-darwin10 \
+  x86_64-apple-darwin15 \
+  x86_64-apple-darwin21 \
   x86_64-cygwinOPT-enable-threads=yes \
   x86_64-dragonflybsd \
   x86_64-elfOPT-with-fpmath=sse \
-  x86_64-freebsd6 \
+  x86_64-freebsd13 \
   x86_64-fuchsia \
+  x86_64-gnu \
   x86_64-kfreebsd-gnu \
   x86_64-mingw32OPT-enable-sjlj-exceptions=yes \
   x86_64-netbsd \
@@ -325,6 +324,7 @@ do
     enable_obsolete=no
     enable_multilib=no
     with_endian=
+    with_multilib_default=
     with_multilib_generator=default
     with_multilib_list=default
 

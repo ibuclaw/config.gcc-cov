@@ -65,6 +65,12 @@ module Bashcov
           )
         end
 
+        # join all lines that end with backslashes to check if it matches an ignored pattern
+        if concat_match = lines[lineno..-1].join.match(/\A([^\n\\]*\\\n)+[^\n]+/)
+          concat_line = concat_match[0].split(/\\\n/).join
+          next if !relevant?(concat_line)
+        end
+
         mark_line(line, lineno)
       end
     end
@@ -107,7 +113,7 @@ module Bashcov
                            line.end_with?(*IGNORE_END_WITH)
 
       relevant &= false if line =~ /\A[a-zA-Z_][a-zA-Z0-9_:]*\(\)/ # function declared without the `function` keyword
-      relevant &= false if line =~ /\A[^)]+\)\Z/ # case statement selector, e.g. `--help)`
+      relevant &= false if line =~ /\A[^)]*\)\Z/ # case statement selector, e.g. `--help)`
 
       relevant
     end
